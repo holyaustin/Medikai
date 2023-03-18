@@ -1,0 +1,17 @@
+{
+    "5": {
+        "PatientMedicalRecordSystem": [
+            "0xb16DeC9F103B1bf9393380A05363995177C6954C"
+        ]
+    },
+    "4": {
+        "PatientMedicalRecordSystem": [
+            "0x72B5e274C989108f282605e359803f130C29e65C"
+        ]
+    },
+    "31337": {
+        "PatientMedicalRecordSystem": [
+            "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+        ]
+    }
+}

@@ -1,0 +1,231 @@
+[
+    { "type": "constructor", "payable": false, "inputs": [] },
+    {
+        "type": "error",
+        "name": "PatientMedicalRecords__NotDoctor",
+        "inputs": []
+    },
+    {
+        "type": "error",
+        "name": "PatientMedicalRecords__NotOwner",
+        "inputs": []
+    },
+    {
+        "type": "error",
+        "name": "PatientMedicalRecords__NotPatient",
+        "inputs": []
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "AddedDoctor",
+        "inputs": [
+            { "type": "address", "name": "doctorAddress", "indexed": true },
+            { "type": "string", "name": "name", "indexed": false },
+            {
+                "type": "string",
+                "name": "doctorRegistrationId",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "dateOfRegistration",
+                "indexed": true
+            },
+            { "type": "string", "name": "specialization", "indexed": false },
+            { "type": "address", "name": "hospitalAddress", "indexed": true }
+        ]
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "AddedHospital",
+        "inputs": [
+            { "type": "address", "name": "hospitalAddress", "indexed": true },
+            { "type": "string", "name": "name", "indexed": false },
+            {
+                "type": "string",
+                "name": "hospitalRegistrationId",
+                "indexed": false
+            },
+            {
+                "type": "uint256",
+                "name": "dateOfRegistration",
+                "indexed": true
+            },
+            { "type": "string", "name": "email", "indexed": false },
+            { "type": "string", "name": "phoneNumber", "indexed": false }
+        ]
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "AddedPatient",
+        "inputs": [
+            { "type": "address", "name": "patientAddress", "indexed": true },
+            { "type": "string", "name": "name", "indexed": false },
+            { "type": "string[]", "name": "chronicHash", "indexed": false },
+            { "type": "uint256", "name": "dob", "indexed": true },
+            { "type": "string", "name": "bloodGroup", "indexed": false },
+            {
+                "type": "uint256",
+                "name": "dateOfRegistration",
+                "indexed": true
+            },
+            { "type": "string", "name": "publicKey", "indexed": false },
+            { "type": "string[]", "name": "vaccinationHash", "indexed": false },
+            { "type": "string", "name": "phoneNumber", "indexed": false },
+            { "type": "string[]", "name": "accidentHash", "indexed": false },
+            { "type": "string[]", "name": "acuteHash", "indexed": false }
+        ]
+    },
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "AddedPublicKey",
+        "inputs": [
+            { "type": "address", "name": "patientAddress", "indexed": true },
+            { "type": "string", "name": "publicKey", "indexed": false }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "addDoctorDetails",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            { "type": "address", "name": "_doctorAddress" },
+            { "type": "string", "name": "_name" },
+            { "type": "string", "name": "_doctorRegistrationId" },
+            { "type": "uint256", "name": "_dateOfRegistration" },
+            { "type": "string", "name": "_specialization" },
+            { "type": "address", "name": "_hospitalAddress" }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "addHospitalDetails",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            { "type": "address", "name": "_hospitalAddress" },
+            { "type": "string", "name": "_name" },
+            { "type": "string", "name": "_hospitalRegistrationId" },
+            { "type": "string", "name": "_email" },
+            { "type": "string", "name": "_phoneNumber" }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "addPatientDetails",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            { "type": "address", "name": "_patientAddress" },
+            { "type": "uint16", "name": "_category" },
+            { "type": "string", "name": "_IpfsHash" }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "getDoctorDetails",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "address", "name": "_doctorAddress" }],
+        "outputs": [
+            { "type": "string" },
+            { "type": "string" },
+            { "type": "string" },
+            { "type": "address" }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getHospitalDetails",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "address", "name": "_hospitalAddress" }],
+        "outputs": [
+            { "type": "string" },
+            { "type": "string" },
+            { "type": "string" }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getMyDetails",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "tuple",
+                "components": [
+                    { "type": "string", "name": "name" },
+                    { "type": "address", "name": "patientAddress" },
+                    { "type": "uint256", "name": "dob" },
+                    { "type": "string", "name": "phoneNumber" },
+                    { "type": "string", "name": "bloodGroup" },
+                    { "type": "string", "name": "publicKey" },
+                    { "type": "uint256", "name": "dateOfRegistration" },
+                    { "type": "string[]", "name": "vaccinationHash" },
+                    { "type": "string[]", "name": "accidentHash" },
+                    { "type": "string[]", "name": "chronicHash" },
+                    { "type": "string[]", "name": "acuteHash" }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getOwner",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [{ "type": "address" }]
+    },
+    {
+        "type": "function",
+        "name": "getPatientDetails",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "address", "name": "_patientAddress" }],
+        "outputs": [
+            { "type": "string" },
+            { "type": "string" },
+            { "type": "uint256" }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getPublicKey",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "address", "name": "_patientAddress" }],
+        "outputs": [{ "type": "string" }]
+    },
+    {
+        "type": "function",
+        "name": "registerPatient",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            { "type": "address", "name": "_patientAddress" },
+            { "type": "string", "name": "_name" },
+            { "type": "uint256", "name": "_dob" },
+            { "type": "string", "name": "_phoneNumber" },
+            { "type": "string", "name": "_bloodGroup" },
+            { "type": "string", "name": "_publicKey" }
+        ],
+        "outputs": []
+    }
+]
