@@ -45,18 +45,7 @@ export default function Header() {
                             Doctor
                         </a>
                     </Link>
-                    <div className="flex flex-col  w-full font-medium border-t border-gray-200 sm:hidden">
-                        <Link href="/ownerDashboard">
-                            <a className="w-full py-2 font-bold text-center text-pink-500">
-                                Owner
-                            </a>
-                        </Link>
-                        <Link href="/patientDashboard">
-                            <a className="relative inline-block w-full px-5 py-3 text-lg leading-none text-center text-white bg-white fold-bold">
-                                Patient
-                            </a>
-                        </Link>
-                    </div>
+
                 </nav>
 
                 <div className=" absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">

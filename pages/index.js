@@ -10,7 +10,7 @@ export default function Home() {
             <Head>
                 <title>Medikai</title>
                 <meta name="description" content="MediChain - Homepage" />
-                <link rel="icon" href="/logo.svg" />
+                <link rel="icon" href="/images/logo.png" />
             </Head>
             <div className=" antialiased">
                 {/* Header Here */}
@@ -24,24 +24,25 @@ export default function Home() {
                             </h1>
                             <p className="pr-0 mb-8 text-base text-pink-500 sm:text-lg xl:text-xl lg:pr-2 text-justify">
                                 A smart contract powered patient medical record deployed on Ethereum major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups) for faster trasanction finality and throughput. Patient Medical data are stored on decentralized storage with data encryption which enables only patients to have access to their medical record, giving them full control over their own data. Diagnosis of ailments are made through the power of Artificial Intelligence (GPT3).
-                            <div  className="mt-10">
+                                 </p>
+                                 <div  className="mt-5"> </div>
+    <div className=" relative flex flex-col items-center space-y-5 justify-center w-full pb-4 mt-4 border-b border-gray-200 md:relative md:space-y-0  md:w-full md:bg-transparent md:border-none  sm:mt-0 lg:flex-row  md:p-0 md:items-center md:justify-between md:flex-row sm:flex-row  sm:items-center sm:justify-between sm:space-y-0">
+    
+    <Link href="/patientDashboard">
+        <a className="relative z-40 inline-block w-full  text-center px-5 py-5 mr-2  text-lg font-bold leading-none text-white transition-all duration-300 bg-red-700 rounded-lg shadow-md lg:bg-white lg:text-pink-700 lg:shadow-none hover:shadow-xl">
+        Patient Login
+        </a>
+    </Link>
+   
+  
+    <Link href="/doctorDashboard">
+        <a className="relative z-40 inline-block w-full text-center px-5 py-5 mr-2 text-lg font-bold leading-none text-white transition-all  duration-300 bg-red-700 rounded-lg shadow-md  lg:bg-white lg:text-pink-700  lg:shadow-none hover:shadow-xl">
+        Doctor Login
+        </a>
+    </Link>
+   
+    </div>
 
-                            </div>
-                                <div className=" relative left-0 flex-col items-center space-y-5 justify-center w-full pb-4 mt-4 border-b border-gray-200 md:relative md:space-y-0  md:w-auto md:bg-transparent md:border-none  sm:mt-0 lg:flex-row  md:p-0 md:items-center md:flex md:justify-between md:flex-row sm:flex-row  sm:items-center sm:flex sm:justify-between sm:space-y-0">
-                                <Link href="/patientDashboard">
-                                    <a className="relative z-40 inline-block w-full h-full text-center px-10 py-5 mr-2  text-lg font-bold leading-none text-white transition-all duration-300 bg-red-700 rounded-lg shadow-md fold-bold lg:bg-white lg:text-pink-700 sm:w-1/2 lg:shadow-none hover:shadow-xl">
-                                    Patient Login
-                                    </a>
-                                </Link>
-                                <Link href="/doctorDashboard">
-                                    <a className="relative z-40 inline-block w-full h-full text-center px-10 py-5 mr-2 text-lg font-bold leading-none text-white transition-all  duration-300 bg-red-700 rounded-lg shadow-md fold-bold lg:bg-white lg:text-pink-700 sm:w-1/2 lg:shadow-none hover:shadow-xl">
-                                    Doctor Login
-                                    </a>
-                                </Link>
-
-                                </div>
-                            </p>
- 
                     
                         
                         </div>
@@ -62,14 +63,14 @@ export default function Home() {
                 {/* <!-- BEGIN FEATURES SECTION --> */}
                 <div
                     id="features"
-                    className="relative w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0"
+                    className="relative w-full px-8 py-10 border-t border-gray-200 md:py-16 lg:py-24 xl:py-10 xl:px-0"
                 >
                     <div className="container flex flex-col items-center justify-between h-full max-w-6xl mx-auto">
-                        <h2 className="my-5 text-base font-medium tracking-tight text-indigo-500 uppercase">
+                        <h2 className="my-5 text-base font-bold tracking-tight text-pink-500 uppercase">
                             Features
                         </h2>
                         <h3 className="max-w-2xl px-5 mt-2 text-3xl font-black leading-tight text-center text-gray-900 sm:mt-0 sm:px-0 sm:text-6xl">
-                            Built and Designed with patients ease and privacy in
+                            Developed for patients and Medical workers with data availability  and privacy in
                             Mind
                         </h3>
                         <div className="flex flex-col w-full mt-0 lg:flex-row sm:mt-10 lg:mt-20">
@@ -88,20 +89,15 @@ export default function Home() {
                                         className="relative w-20 h-20"
                                     />
                                     <h4 className="relative mt-6 text-lg font-bold">
-                                        Ease and Control
+                                        Easy Record Access
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
-                                        Ease and control of your medical
-                                        records. You can access it whenever you
-                                        want. Only you can access your data and
-                                        no one can.
+                                        After Records are created and stored, 
+                                        You can access it whenever you
+                                        want. Only you can access your 
+                                        medical record because its encrpted.
                                     </p>
-                                    <a
-                                        href="https://www.cloudflare.com/en-in/learning/ssl/how-does-public-key-encryption-work/"
-                                        className="relative flex mt-2 text-sm font-medium text-indigo-500 underline"
-                                    >
-                                        Learn More
-                                    </a>
+
                                 </div>
                             </div>
 
@@ -123,17 +119,13 @@ export default function Home() {
                                         Immutability
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
-                                        Being deployed on public blockchain,
-                                        this application makes sure that the
+                                        Deployed on public blockchain,
+                                        leveraging Ethereum scaling technology.
+                                        This makes sure that the
                                         patient's data is permanent, indellible
                                         and unalterable.
                                     </p>
-                                    <a
-                                        href="https://www.solulab.com/what-is-immutable-ledger-in-blockchain-and-its-benefits"
-                                        className="relative flex mt-2 text-sm font-medium text-indigo-500 underline"
-                                    >
-                                        Learn More
-                                    </a>
+
                                 </div>
                             </div>
 
@@ -152,21 +144,15 @@ export default function Home() {
                                         className="relative w-20 h-20"
                                     />
                                     <h4 className="relative mt-6 text-lg font-bold">
-                                        Enhanced Security
+                                        AI Diagnosis
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
-                                        Every node in the network has an
-                                        encrypted copy of you data which only
-                                        you can decrypt. This removes single
-                                        point of failure making the data safe
-                                        from ransomeware attacks.
+                                        Users can diagnose their ailment 
+                                        based on the symptoms they experience. 
+                                        This always further help ,medical laboratory 
+                                        scientist and doctors in the areas of 
+                                        diagnosis they can conduct for the patient. 
                                     </p>
-                                    <a
-                                        href="https://www.techopedia.com/can-the-blockchain-be-hacked/2/33623"
-                                        className="relative flex mt-2 text-sm font-medium text-indigo-500 underline"
-                                    >
-                                        Learn More
-                                    </a>
                                 </div>
                             </div>
                         </div>

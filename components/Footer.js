@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <div>
-            <footer className="px-4 pt-20 pb-8 text-white bg-white border-t border-gray-200">
+            <footer className="px-4 pt-20 pb-8 text-white bg-pink-200 border-t border-gray-200">
                 <div className="container flex flex-col justify-between max-w-6xl px-4 mx-auto overflow-hidden lg:flex-row">
                     <div className="w-full pl-12 mr-4 text-left lg:w-1/4 sm:text-center sm:pl-0 lg:text-left">
                         <a
@@ -9,12 +9,11 @@ export default function Footer() {
                             className="flex justify-start block text-left sm:text-center lg:text-left sm:justify-center lg:justify-start"
                         >
                             <span className="flex items-start sm:items-center">
-                                <img src="/logo.svg" alt="Logo of MediChain" />
+                                <img src="/images/bgwhite.png" alt="medikai" />
                             </span>
                         </a>
                         <p className="mt-6 mr-4 text-base text-gray-500">
-                            Crafting the next-level of user experience and data
-                            security.
+                            Leveraging Artifical Intelligence (AI) and the blockchain technology in the medical domain.
                         </p>
                     </div>
                     <div className="block w-full pl-10 mt-6 text-sm lg:w-3/4 sm:flex lg:mt-0">
@@ -24,92 +23,100 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/sadityakumar9211/medichain-hardhat"
+                                    href="/#"
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                                >
-                                    Hardhat Repository
+                                >Home
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/sadityakumar9211/medichain-nextjs"
+                                    href="/#features"
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    Next.js Repository
+                                    Features
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/sadityakumar9211/medichain-thegraph"
+                                    href="/#features"
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    The Graph Repository
-                                </a>
-                            </li>
-                        </ul>
-                        <ul className="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
-                            <li className="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">
-                                Hardhat Tools
-                            </li>
-                            <li>
-                                <a
-                                    href="https://hardhat.org/"
-                                    target="_blank"
-                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                                >
-                                    Hardhat
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://thegraph.com/en/"
-                                    target="_blank"
-                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                                >
-                                    The Graph
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://moralis.io/"
-                                    target="_blank"
-                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
-                                >
-                                    Moralis Open Source Tools
+                                    F.A.Q.
                                 </a>
                             </li>
                         </ul>
                         <ul className="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
                             <li className="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">
-                                Frontend
+                                Blockchain Deployed
                             </li>
                             <li>
                                 <a
-                                    href="https://nextjs.org/"
+                                    href="https://guide.scroll.io/developers/building-on-scroll"
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    Next.js
+                                    Scroll
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://github.com/web3ui/web3uikit" target="_blank"
+                                    href="https://docs.gnosischain.com"
+                                    target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    Web3uikit
+                                    Gnosis
                                 </a>
                             </li>
                             <li>
                                 <a
-                                    href="https://tailwindcss.com/"
+                                    href="https://stack.optimism.io/"
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    Tailwind CSS
+                                    Optimism
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://polygon.technology/"
+                                    target="_blank"
+                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
+                                >
+                                    Polygon
+                                </a>
+                            </li>
+                        </ul>
+                        <ul className="flex flex-col w-full p-0 font-medium text-left text-gray-700 list-none">
+                            <li className="inline-block px-3 py-2 mt-5 font-bold tracking-wide text-gray-800 uppercase md:mt-0">
+                                Users Access
+                            </li>
+                            <li>
+                                <a
+                                    href="/patientDashboard"
+                                    target="_blank"
+                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
+                                >
+                                    Patient Login
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/doctorDashboard" target="_blank"
+                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
+                                >
+                                    Doctors login
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/hospitalDashboard"
+                                    target="_blank"
+                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
+                                >
+                                    Hospital Login
                                 </a>
                             </li>
                         </ul>
@@ -162,13 +169,14 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="pt-4 pt-6 mt-10 text-center text-gray-500 border-t border-gray-100">
-                    © 2022 MediChain. All rights reserved.
+                    © 2023 Medikai. All rights reserved.
                 </div>
-
+{/**
                 <div className="pt-2 pt-4 mt-2 text-center text-gray-600 border-t border-gray-100">
                     Developed by{" "}
-                    <a href="https://saditya9211.me">Aditya Kumar Singh</a>
+                    <a href="https://twitter.com/holyaustin">Augustine Onuora</a>
                 </div>
+ */}
             </footer>
         </div>
     )

@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/sadityakumar9211/medichain-nextjs">
-    <img src="public/logo.svg" alt="Logo" width="80" height="80">
+    <img src="public/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">AI-Enabled Diagnosis with a Decentralized Patient Medical Records</h3>
