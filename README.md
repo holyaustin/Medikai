@@ -22,7 +22,6 @@ With this system patients can access their medical records anytime anywhere with
 
 ### The links to other repositories of this project is at the top
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -34,7 +33,6 @@ The following is a list of major frameworks, library and tools used for developi
 - [![moralis][moralis]][moralis-url]
 - [![web3uikit][web3uikit]][web3uikit-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -86,7 +84,6 @@ In your networkMapping.json you have an entry for `PatientMedicalRecordSystem` o
 yarn dev
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -103,7 +100,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -111,25 +107,17 @@ Don't forget to give the project a star! Thanks again!
 
 Project is distributed under the MIT License.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
 ## Contact
 
-If you appreciated this, feel free to follow me or donate!
 
-ETH Address: 0xED5A704De64Ff9699dB62d09248C8d179bb77D8A
-
-[![Aditya Singh Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/saditya9211/)
-[![Aditya Singh Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/sadityakumar921)
-[![Aditya Singh StackOverflow](https://img.shields.io/badge/StackOverflow-gray?style=for-the-badge&logo=stackoverflow&logoColor=orange)](https://stackoverflow.com/users/14769639/saditya)
-[![Aditya Singh Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@sadityakumar9211)
-[![Aditya Singh Gmail](https://img.shields.io/badge/Gmail-gray?style=for-the-badge&logo=gmail)](mailto:sadityakumar9211@gmail.com)
+[![My Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/holyaustin)
+[![Aditya Singh Gmail](https://img.shields.io/badge/Gmail-gray?style=for-the-badge&logo=gmail)](mailto:holyaustin@yahoo.com)
 
 Project Link: [https://github.com/holyaustin/Medikai](https://github.com/holyaustin/Medikai)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -143,7 +131,6 @@ Project Link: [https://github.com/holyaustin/Medikai](https://github.com/holyaus
 - [qrcode for generating qrcode](https://www.npmjs.com/package/qrcode)
 - [swr](https://www.npmjs.com/package/swr)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
