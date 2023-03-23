@@ -414,10 +414,10 @@ export default function OwnerDashboard() {
                                     </button>
                                     <button className="btn">
                                         <a
-                                            href={`https://goerli.etherscan.io/address/${medicalRecordSystemAddress}`}
+                                            href={`https://https://blockscout.scroll.io/address/${medicalRecordSystemAddress}`}
                                             target="_blank"
                                         >
-                                            View on Etherscan
+                                            View on BLockScout
                                         </a>
                                     </button>
                                 </div>

@@ -49,7 +49,11 @@ export default function Header() {
                 </nav>
 
                 <div className=" absolute left-0 flex-col items-center justify-center hidden w-full pb-8 mt-48 border-b border-gray-200 md:relative md:w-auto md:bg-transparent md:border-none md:mt-0 md:flex-row md:p-0 md:items-end md:flex md:justify-between">
-
+                <Link href="/ownerDashboard">
+                        <a className="relative z-40 inline-block w-auto h-full px-10 py-5 mr-5 text-lg font-bold leading-none text-white transition-all  duration-300 bg-red-700 rounded-lg shadow-md fold-bold lg:bg-white lg:text-pink-700 sm:w-full lg:shadow-none hover:shadow-xl">
+                            Admin
+                        </a>
+                    </Link>
                     <Link href="/patientDashboard">
                         <a className="relative z-40 inline-block w-auto h-full px-10 py-5 mr-5 text-lg font-bold leading-none text-white transition-all  duration-300 bg-red-700 rounded-lg shadow-md fold-bold lg:bg-white lg:text-pink-700 sm:w-full lg:shadow-none hover:shadow-xl">
                             White Paper

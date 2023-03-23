@@ -25,9 +25,8 @@ export default function RegisterPatientModal({ isVisible, onClose, account }) {
     const chainId = chainHexId ? parseInt(chainHexId).toString() : "31337"
     const medicalRecordSystemAddress =
         networkMapping[chainId].PatientMedicalRecordSystem[0]
-
-    // console.log("I am contract address", medicalRecordSystemAddress)
-    // console.log("I am chain Id: ", chainId)
+    console.log("I am contract address", medicalRecordSystemAddress)
+    console.log("I am chain Id: ", chainId)
     const handleRegisterPatientSuccess = async (tx) => {
         await tx.wait(1)
         dispatch({

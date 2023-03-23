@@ -53,34 +53,34 @@ The following is a list of major frameworks, library and tools used for developi
     - `yarn --version` and get an output like: `x.x.x`
     - You might need to install it with `npm`
 - Optional Instruction
-  - Make sure that this repository and `medichain-hardhat` repository are in the same level in your directory structure.
+  - Make sure that this repository and `Medikai` repository are in the same level in your directory structure.
   - This makes sure that whenever you deploy the smart contract, this repository's `constants` files are updated.
 
 ## Quickstart
 
 ```bash
-git clone https://github.com/sadityakumar9211/medichain-nextjs
-cd medichain-nextjs
+git clone https://github.com/holyaustin/Medikai
+cd Medikai
 yarn
 ```
 
 ## Locally Deploying
 
 2. Deploy to your contract to Goerli
-   After installing dependencies, deploy your contracts to goerli:
+   After installing dependencies, deploy your contracts to optimism, Scroll, Gnosis or Polygon zkEVM:
 
 ```bash
-yarn hardhat deploy --network goerli
+yarn hardhat deploy --network optimism
 ```
 
 3. Connecting with Subgraph
 
-You can use the same subgraph temporary URI (as present in the `pages/_app.js`) to query the data or you can clone [this repository](https://github.com/sadityakumar9211/medichain-thegraph) and deploy your own subgraph using the instructions in above repo and generate your own temporary query URI.
+You can use the same subgraph temporary URI (as present in the `pages/_app.js`) to query the data.
 
 4. Start your UI
    Make sure that:
 
-In your networkMapping.json you have an entry for `PatientMedicalRecordSystem` on the goerli network.
+In your networkMapping.json you have an entry for `PatientMedicalRecordSystem` on the optmism network.
 
 ```bash
 yarn dev
@@ -127,7 +127,7 @@ ETH Address: 0xED5A704De64Ff9699dB62d09248C8d179bb77D8A
 [![Aditya Singh Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@sadityakumar9211)
 [![Aditya Singh Gmail](https://img.shields.io/badge/Gmail-gray?style=for-the-badge&logo=gmail)](mailto:sadityakumar9211@gmail.com)
 
-Project Link: [https://github.com/sadityakumar9211/medichain-hardhat](https://github.com/sadityakumar9211/medichain-hardhat)
+Project Link: [https://github.com/holyaustin/Medikai](https://github.com/holyaustin/Medikai)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

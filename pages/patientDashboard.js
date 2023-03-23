@@ -11,17 +11,18 @@ import NotRegisteredPatient from "../components/NotRegisteredPatient"
 
 export default function PatientDashboard() {
     const { isWeb3Enabled, chainId: chainHexId, account } = useMoralis()
-
+    console.log("chainHEX ID is",chainHexId)
     const chainId = chainHexId ? parseInt(chainHexId).toString() : "31337"
-    // console.log(chainId)
+    console.log("chain ID is",chainId)
     const patientMedicalRecordSystemAddress =
         networkMapping[chainId].PatientMedicalRecordSystem[0]
+        console.log("networkMapping is",patientMedicalRecordSystemAddress)
     const {
         loading: fetchingAddedPatients,
         error,
         data: addedPatients,
     } = useQuery(GET_ADDED_PATIENTS)
-
+    console.log("Past sub graphy",chainId)
     let isRegistered = false
     let patientAddresses
     if (!fetchingAddedPatients && addedPatients) {
@@ -36,19 +37,19 @@ export default function PatientDashboard() {
     return (
         <div className="container mx-auto overflow-x-hidden h-screen">
             <Head>
-                <title>MediChain - Patient Dashboard</title>
+                <title>Medikia - Patient Dashboard</title>
                 <meta
                     name="description"
-                    content="MediChain - Patient Dashboard"
+                    content="Medikia - Patient Dashboard"
                 />
-                <link rel="icon" href="/logo.svg" />
+                <link rel="icon" href="/images/logo.png" />
             </Head>
             <Header />
             <div className="container">
-                <div className="py-4 px-3 font-bold text-4xl ml-12">
+                <div className="mt-10 py-4 px-3 font-bold text-4xl ml-12 text-center">
                     Patient Dashboard
                     {isWeb3Enabled ? (
-                        <div className="badge badge-primary ml-4">
+                        <div className="badge badge-primary ml-5 ">
                             Web3 is Enabled
                         </div>
                     ) : (
@@ -57,7 +58,7 @@ export default function PatientDashboard() {
                         </div>
                     )}
                 </div>
-                <div className="mx-auto ml-12">
+                <div className="mx-auto ml-52 p5 text-2xl">
                     <ConnectButton moralisAuth={false} />
                 </div>
 
@@ -66,7 +67,7 @@ export default function PatientDashboard() {
                         fetchingAddedPatients || !addedPatients ? (
                             <div
                                 style={{
-                                    backgroundColor: "#ECECFE",
+                                    backgroundColor: "#FFC0CB",
                                     borderRadius: "6px",
                                     padding: "15px",
                                 }}
