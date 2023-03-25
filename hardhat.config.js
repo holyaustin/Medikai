@@ -28,6 +28,16 @@ module.exports = {
       chainId: 100,
       accounts: [process.env.PRIVATE_KEY],
     },
+    taiko: {
+      url: "https://rpc.a2.taiko.xyz", 
+      chainId: 167004,
+      accounts: [process.env.PRIVATE_KEY],
+    },
+    mantle: {
+      url: "https://rpc.testnet.mantle.xyz/", 
+      chainId: 5001,
+      accounts: [process.env.PRIVATE_KEY],
+    },
     goerli: {
       url: "https://rpc.ankr.com/eth_goerli", 
       chainId: 5,

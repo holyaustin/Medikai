@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 //The Graph
 const client = new ApolloClient({
     cache: new InMemoryCache(),
-    uri: process.env.subgraph_url, //change this uri here and make a graph uri
+    uri: process.env.subgraph_url, // "https://api.studio.thegraph.com/query/25176/medikai/v0.0.1"
 })
 
 function MyApp({ Component, pageProps }) {
