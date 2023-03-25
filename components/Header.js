@@ -30,16 +30,22 @@ export default function Header() {
                             Features
                         </a>
                     </Link>
-                    <Link href="/hospitalDashboard">
-                        <a className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-white">
-                            Hospital
-                        </a>
-                    </Link>
                     <Link href="/symptom">
                         <a className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-white">
                             Symptom-Diagnosis
                         </a>
                     </Link>
+                    <Link href="/patientDashboard">
+                        <a className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-white">
+                            Patient
+                        </a>
+                    </Link>
+                    <Link href="/hospitalDashboard">
+                        <a className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-white">
+                            Hospital
+                        </a>
+                    </Link>
+
                     <Link href="/doctorDashboard">
                         <a className="mr-0 font-bold duration-100 md:mr-3 lg:mr-8 transition-color hover:text-white">
                             Doctor

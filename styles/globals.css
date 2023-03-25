@@ -19,6 +19,198 @@ a {
   box-sizing: border-box;
 }
 
+.root {
+    display: flex;
+    place-content: center flex-start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 100vh;
+    overflow: auto;
+    padding: 0px;
+    position: relative;
+}
+.container2 {
+    display: flex;
+    place-content: center flex-start;
+    align-items: center;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: fit-content;
+    max-width: 975px;
+    overflow: auto;
+    padding: 50px;
+    position: relative;
+    width: auto;
+    gap: 64px;
+}
+.header {    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #FFF
+}
+.header-title {
+    display: flex;
+    gap: 12px;
+}
+.header-title h1 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 72px;
+    letter-spacing: -4px;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+.header-subtitle h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+    color: rgba(255, 255, 255, 0.75);
+}
+.prompt-container {
+    place-content: flex-end center;
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 16px;
+    height: min-content;
+    padding: 0px;
+    width: min-content;
+}
+.prompt-box {
+    border-bottom-width: 1px;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: 150px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    width: 610px;
+    max-width: 1200px;
+    will-change: transform;
+    overflow: auto;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    text-transform: none;
+}
+textarea {
+    font-family: 'Manrope', sans-serif;
+}
+.prompt-box:focus {
+    border-color:rgba(255, 255, 255, 0.75)
+}
+.prompt-buttons {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 12px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+.prompt-buttons2 {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    //justify-content: flex-end;
+    flex: 0 0 auto;
+    flex-flow: row nowrap;
+    gap: 2px;
+    height: min-content;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+}
+.key-stroke {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+}
+.key-stroke p {
+    color: rgba(255, 255, 255, 0.75);
+    flex: 0 0 auto;
+    height: auto;
+    position: relative;
+    white-space: pre;
+    width: auto;
+}
+.or {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+}
+.or p {
+    color: rgba(255, 255, 255, 0.25)
+}
+.generate-button {
+    place-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255,105,180);
+    border-radius: 100px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 16px 24px;
+    position: relative;
+    text-decoration: none;
+    width: min-content;
+    will-change: transform;
+    cursor: pointer;
+}
+.generate-button2 {
+    place-content: flex-start;
+    align-items: center;
+    background-color: rgb(255,105,180);
+    border-radius: 100px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: column nowrap;
+    gap: 10px;
+    height: min-content;
+    overflow: hidden;
+    padding: 16px 24px;
+}
+
 @media (prefers-color-scheme: dark) {
   /* html {
     color-scheme: dark;
