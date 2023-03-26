@@ -5,17 +5,28 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Header from "../components/Header";
 
-const Drugs = () => {
-    const navigate = useRouter();
+import { Auth } from '@polybase/auth'
+import { ethPersonalSignRecoverPublicKey } from '@polybase/eth'
+import { Polybase } from '@polybase/client'
+import { useCollection } from '@polybase/react'
+
+const db = new Polybase({
+  defaultNamespace: "pk/0xa08044cc7ba5415c39c7f20ad88b04a82f7cf8e850d968cacf2bcddd46615a75afc495b1e69786fb67c542a70b91946e0ac02a61fdd7a17bb2fd407676b28afa/Medikai",
+});
+
+const auth = new Auth()
+
+const Disease = () => {
+  const navigate = useRouter();
   const [userInput, setUserInput] = useState('');
-  const [apiOutput, setApiOutput] = useState('')
-const [isGenerating, setIsGenerating] = useState(false)
+  const [apiOutput, setApiOutput] = useState('');
+const [isGenerating, setIsGenerating] = useState(false);
 
 const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   
   console.log("Calling OpenAI...");
-  const response = await fetch('/api/generate2', {
+  const response = await fetch('http://localhost:3001/api/generate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -29,18 +40,31 @@ const callGenerateEndpoint = async () => {
 
   setApiOutput(`${output.text}`);
   setIsGenerating(false);
+
+  // Add record to polybase
+  const pk = await auth.signIn()
+  let publicKey = pk.publicKey
+  await db.collection("Medikai").create(["publicKey, userInput, output.text]); 
 }
 
-const getBack = async () => {
-    console.log("Calling GetBack...");
-  
-  navigate.push('/');
-  }
+const getAbstract = async () => {
+  console.log("Calling Abstract...");
+
+navigate.push('/drugs');
+}
 
   const onUserChangedText = (event) => {
     console.log(event.target.value);
     setUserInput(event.target.value);
   };
+
+
+
+
+
+
+
+
   return (
     <>
     <Header />
@@ -48,28 +72,28 @@ const getBack = async () => {
       <div className="container2">
         <div className="header">
           <div className="header-title">
-            <h1>Drug Prescriptor</h1>
+            <h1>AI - Disease Diagnosis</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Get drugs for the ailment identified</h2>
+            <h2>Get your symptoms checked</h2>
           </div>
         </div>
-        {/* Add this code here*/}
+       
         <div className="prompt-container">
         <textarea
   className="prompt-box"
-  placeholder="Enter your preferred ailment here"
+  placeholder="start by typing your symptoms"
   value={userInput}
   onChange={onUserChangedText}
 />;
-  {/* New code I added here */}
+
   <div className="prompt-buttons">
   <a
     className={isGenerating ? 'generate-button loading' : 'generate-button'}
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+    {isGenerating ? <span className="loader"></span> : <p>Diagnose</p>}
     </div>
   </a>
 </div>
@@ -79,7 +103,7 @@ const getBack = async () => {
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>Solution</h3>
+        <h3>List of Ailments</h3>
       </div>
     </div>
 
@@ -89,10 +113,10 @@ const getBack = async () => {
       <div className="prompt-buttons2">
   <a
     className="generate-button2"
-    onClick={getBack}
+    onClick={getAbstract}
   >
     <div className="generate">
-   <p>Get Back to Home Page</p>
+   <p>Get Drugs and remedies for any selected ailment above</p>
     </div>
   </a>
 </div>
@@ -114,9 +138,10 @@ const getBack = async () => {
 
         </div>
       </div>
+
     </div>
     </>
   );
 };
 
-export default Drugs;
+export default Disease;

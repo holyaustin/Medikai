@@ -38,11 +38,11 @@ The following is a list of major frameworks, library and tools used for developi
 - [TheGraph][https://thegraph.com/]
 
 ### Blockchains deployed
-- Mantle - 
-- Scroll - 
-- Gnosis Chain - 
-- Polygon zkEVM - 
-- Optimism -
+- Mantle - https://explorer.testnet.mantle.xyz/address/0x8D36089AB6eFdB3FEb2D8Ed42F7eC80f3c6d2b11
+- Scroll - https://blockscout.scroll.io/address/0x5E4e5347eB417982375Ef9BDe0B77F4322FCF79F
+- Gnosis Chain - https://gnosisscan.io/address/0xe078fe7a93017f8e18c1c52e79632d0b94c56c26
+- Polygon zkEVM - https://explorer.public.zkevm-test.net/address/0x42Fc1d53EcF8B4c46989da0d44f07490668338c8
+- Optimism - https://optimistic.etherscan.io/address/0x7064f88f4840588b78014d6d3f4556faadf20893
 
 
 <!-- GETTING STARTED -->

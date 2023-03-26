@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 //The Graph
 const client = new ApolloClient({
     cache: new InMemoryCache(),
-    uri: process.env.subgraph_url, // "https://api.studio.thegraph.com/query/25176/medikai/v0.0.1"
+    uri: "https://api.studio.thegraph.com/query/25176/medikai-gnosis/v0.0.2", 
     // https://api.studio.thegraph.com/query/25176/medikai-gnosis/v0.0.2
     // https://api.studio.thegraph.com/query/25176/medikai/v0.0.1
 })
