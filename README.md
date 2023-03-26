@@ -10,8 +10,7 @@
 
 </div>
 
-## About The Project
-
+## About Medikai
 <img width="1278" alt="current image" src="https://bafkreicqdowtoh2klo25wrve4iand53yqy4l52uxmsw7r73seh3gexwfpi.ipfs.nftstorage.link/">
 
 **Blockchain** is an immutable ledger and with its decentralized nature has great potential for increasing the security, privacy, and efficiency of Medical Health Record keeping systems. Currently, existing solutions rely on centralized databases which are susceptible to Ransomware attacks, Denial of Service(DoS) attacks and also have significant counterparty risks. Some decentralized solutions also exist but some of them are not really decentralized that is based on private or permissioned blockchain. In contrast, some which are based on public blockchains have not properly addressed the performance and scalability issues.
