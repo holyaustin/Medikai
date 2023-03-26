@@ -11,7 +11,11 @@ const db = new Polybase({
   defaultNamespace: "pk/0xa08044cc7ba5415c39c7f20ad88b04a82f7cf8e850d968cacf2bcddd46615a75afc495b1e69786fb67c542a70b91946e0ac02a61fdd7a17bb2fd407676b28afa/Medikai",
 });
 
-const auth = new Auth()
+if(typeof document !== 'undefined') {
+  // you are safe to use the "document" object here
+  console.log(document.location.href);
+  const auth = new Auth();
+}
 
 const Disease = () => {
   const navigate = useRouter();
@@ -41,7 +45,7 @@ const callGenerateEndpoint = async () => {
   // Add record to polybase
   const pk = await auth.signIn()
   let publicKey = pk.publicKey
-  await db.collection("Medikai").create(["publicKey, userInput, output.text]); 
+  await db.collection("Medikai").create([publicKey, userInput, output.text]); 
 }
 
 const getAbstract = async () => {
