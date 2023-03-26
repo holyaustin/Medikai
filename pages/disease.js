@@ -4,11 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Header from "../components/Header";
-
 import { Auth } from '@polybase/auth'
-import { ethPersonalSignRecoverPublicKey } from '@polybase/eth'
 import { Polybase } from '@polybase/client'
-import { useCollection } from '@polybase/react'
 
 const db = new Polybase({
   defaultNamespace: "pk/0xa08044cc7ba5415c39c7f20ad88b04a82f7cf8e850d968cacf2bcddd46615a75afc495b1e69786fb67c542a70b91946e0ac02a61fdd7a17bb2fd407676b28afa/Medikai",
