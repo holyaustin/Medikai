@@ -85,7 +85,16 @@ export default function Footer() {
                                     target="_blank"
                                     className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
                                 >
-                                    Polygon
+                                    Polygon zkEVMS
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://mantle.xyz/"
+                                    target="_blank"
+                                    className="inline-block px-3 py-2 text-gray-500 no-underline hover:text-gray-600"
+                                >
+                                    Mantle
                                 </a>
                             </li>
                         </ul>

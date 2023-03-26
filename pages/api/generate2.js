@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Take the topic and generate an abstract written in the style of David Karger. Don't just list the points. Summarise the entire topic in one paragraph.
+Take the sickness / ailment and generate possible drugs and remedies.Prescription should conform to Mayo Clinic, drugs.com, cleveland clinic or medicinenet. list the drugs and remedies. Summarise the entire treatment in one paragraph.
 
 `
 const generateAction = async (req, res) => {

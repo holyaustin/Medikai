@@ -3,11 +3,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import "./ai.module.css";
-//import buildspaceLogo from '../assets/buildspace-logo.png';
+import Header from "../components/Header";
 
-const Ai = () => {
-  const navigate = useRouter();
+const Drugs = () => {
+    const navigate = useRouter();
   const [userInput, setUserInput] = useState('');
   const [apiOutput, setApiOutput] = useState('')
 const [isGenerating, setIsGenerating] = useState(false)
@@ -16,7 +15,7 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   
   console.log("Calling OpenAI...");
-  const response = await fetch('/api/generate', {
+  const response = await fetch('/api/generate2', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -32,32 +31,34 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(false);
 }
 
-const getAbstract = async () => {
-  console.log("Calling Abstract...");
-
-navigate.push('/abstract');
-}
+const getBack = async () => {
+    console.log("Calling GetBack...");
+  
+  navigate.push('/');
+  }
 
   const onUserChangedText = (event) => {
     console.log(event.target.value);
     setUserInput(event.target.value);
   };
   return (
+    <>
+    <Header />
     <div className="root">
-      <div className="container">
+      <div className="container2">
         <div className="header">
           <div className="header-title">
-            <h1>AI - Academic Journal Generator</h1>
+            <h1>Drug Prescriptor</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Get your Journal research topic</h2>
+            <h2>Get drugs for the ailment identified</h2>
           </div>
         </div>
         {/* Add this code here*/}
         <div className="prompt-container">
         <textarea
   className="prompt-box"
-  placeholder="start by typing a research niche"
+  placeholder="Enter your preferred ailment here"
   value={userInput}
   onChange={onUserChangedText}
 />;
@@ -78,7 +79,7 @@ navigate.push('/abstract');
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>List of Topics</h3>
+        <h3>Abstract</h3>
       </div>
     </div>
 
@@ -88,10 +89,10 @@ navigate.push('/abstract');
       <div className="prompt-buttons2">
   <a
     className="generate-button2"
-    onClick={getAbstract}
+    onClick={getBack}
   >
     <div className="generate">
-   <p>Get Abstract of any of the topics above</p>
+   <p>Get Back to Home Page</p>
     </div>
   </a>
 </div>
@@ -113,9 +114,9 @@ navigate.push('/abstract');
 
         </div>
       </div>
-
     </div>
+    </>
   );
 };
 
-export default Ai;
+export default Drugs;

@@ -1,5 +1,4 @@
 import { Configuration, OpenAIApi } from 'openai';
-console.log("Process api key is : ", process.env.OPENAI_API_KEY )
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
@@ -8,7 +7,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix =
 `
-Write me research topics in Computer Science with the topic area below. Please make sure the topics goes in-depth and shows that the topics are recent and novel.
+Write me list of sickness associated with the symptoms provided. Make sure the disease / sickness goes in-depth and shows that the symptom is connected to the ailment.
 `
 const generateAction = async (req, res) => {
   // Run first prompt
@@ -18,7 +17,7 @@ const generateAction = async (req, res) => {
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}`,
     temperature: 0.7,
-    max_tokens: 250,
+    max_tokens: 350,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();
@@ -27,3 +26,13 @@ const generateAction = async (req, res) => {
 };
 
 export default generateAction;
+
+const response = await openai.createCompletion({
+  model: "text-davinci-003",
+  prompt: "what are possible sicknesses associated with the following symptoms; headache, shoulder pain, toenails pain, fingernail \n\nPossible sickness associated with the symptoms include:\n1. Migraine\n2. Fibromyalgia\n3. Arthritis\n4. Tendonitis\n5. Gout\n6. Psoriatic Arthritis\n7. Carpal Tunnel Syndrome\n8. Bursitis",
+  temperature: 0.7,
+  max_tokens: 300,
+  top_p: 1,
+  frequency_penalty: 0,
+  presence_penalty: 0,
+});

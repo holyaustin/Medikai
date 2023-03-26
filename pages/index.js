@@ -20,10 +20,10 @@ export default function Home() {
                     <div className="container flex flex-col items-center justify-between h-full max-w-6xl px-8 mx-auto -mt-32 lg:flex-row xl:px-0 sm:h-full">
                         <div className="z-30 flex flex-col items-center w-full max-w-none pt-48 text-center mr-10 justify-center lg:items-start lg:w-1/2 lg:pt-20 xl:pt-40 lg:text-left">
                             <h1 className="relative mb-4 text-3xl font-black leading-tight text-white sm:text-5xl xl:mb-8 text-justify">
-                                AI-Enabled Diagnosis for a Decentralized Medical Record system
+                                AI - Enabled Diagnosis for a Decentralized Medical Record system
                             </h1>
                             <p className="pr-0 mb-8 text-base text-pink-500 sm:text-lg xl:text-xl lg:pr-2 text-justify">
-                                A smart contract powered patient medical record deployed on Ethereum major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups) for faster trasanction finality and throughput. Patient Medical data are stored on decentralized storage with data encryption which enables only patients to have access to their medical record, giving them full control over their own data. Diagnosis of ailments are made through the power of Artificial Intelligence (GPT3).
+                                A smart contract powered patient medical record deployed on Ethereum major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups) for faster trasanction finality and throughput. Patient Medical data are stored on decentralized storage with data encryption transaction committed on -chain. This enables only patients to have access to their medical record, giving them full control over their own data. Diagnosis of ailments are made through the power of Artificial Intelligence (OpenAI) and this DApp support Multi-chain.
                                  </p>
                                  <div  className="mt-5"> </div>
     <div className=" relative flex flex-col items-center space-y-5 justify-center w-full pb-4 mt-4 border-b border-gray-200 md:relative md:space-y-0  md:w-full md:bg-transparent md:border-none  sm:mt-0 lg:flex-row  md:p-0 md:items-center md:justify-between md:flex-row sm:flex-row  sm:items-center sm:justify-between sm:space-y-0">
@@ -88,14 +88,14 @@ export default function Home() {
                                         alt=""
                                         className="relative w-20 h-20"
                                     />
-                                    <h4 className="relative mt-6 text-lg font-bold">
+                                    <h4 className="relative mt-6 text-lg font-bold text-center ">
                                         Easy Record Access
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
-                                        After Records are created and stored, 
+                                        Patient registers with their wallet, After Records are created and stored, 
                                         You can access it whenever you
                                         want. Only you can access your 
-                                        medical record because its encrpted.
+                                        medical record because its encrypted.
                                     </p>
 
                                 </div>
@@ -115,8 +115,8 @@ export default function Home() {
                                         alt=""
                                         className="relative w-20 h-20"
                                     />
-                                    <h4 className="relative mt-6 text-lg font-bold">
-                                        Immutability
+                                    <h4 className="relative mt-6 text-lg font-bold text-center ">
+                                        Multi-Chain Support / Immutability
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
                                         Deployed on public blockchain,
@@ -143,8 +143,8 @@ export default function Home() {
                                         alt=""
                                         className="relative w-20 h-20"
                                     />
-                                    <h4 className="relative mt-6 text-lg font-bold">
-                                        AI Diagnosis
+                                    <h4 className="relative mt-6 text-lg font-bold text-center ">
+                                        AI Diagnosis / Medical Assistance
                                     </h4>
                                     <p className="relative mt-2 md:text-base text-sm text-center text-gray-600">
                                         Users can diagnose their ailment 

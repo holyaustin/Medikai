@@ -14,11 +14,13 @@
 
 <img width="1278" alt="current image" src="https://bafkreicqdowtoh2klo25wrve4iand53yqy4l52uxmsw7r73seh3gexwfpi.ipfs.nftstorage.link/">
 
-**Blockchain** being an immutable ledger and with decentralized nature has a great potential for increasing the security, privacy and efficiency of Medical Health Record keeping systems. Currently existing solutions rely on centralised database which are susceptible to _Ransomware attacks, Denial of Service(DoS) attacks and also have significant counterparty risks_. Some decentralized solutions are also exist but some of them are not really decentralized that are based on private or permis- sioned blockchain, while some which are based on public blockchain have not properly addressed the performance and scalability issues.
+**Blockchain** is an immutable ledger and with its decentralized nature has great potential for increasing the security, privacy, and efficiency of Medical Health Record keeping systems. Currently, existing solutions rely on centralized databases which are susceptible to Ransomware attacks, Denial of Service(DoS) attacks and also have significant counterparty risks. Some decentralized solutions also exist but some of them are not really decentralized that is based on private or permissioned blockchain. In contrast, some which are based on public blockchains have not properly addressed the performance and scalability issues.
 
-The proposed system is based on EVM compatible public blockchains using IPFS as a decentralized file storage solution and uses 2048 bit RSA encryption to encrypt the IPFS HASH of file metadata on the client-side before uploading the HASH on the blockchain. For supporting fast and complex queries this system uses a decentralized indexing protocol _The Graph_. The smart contract is currently deployed on _Goerli Testnet_.
+The proposed system is based on EVM-compatible public blockchains using IPFS as a decentralized file storage solution and uses 2048 bit RSA encryption to encrypt the IPFS HASH of file metadata on the client-side before uploading the HASH on the blockchain. For supporting fast and complex queries this system uses a decentralized indexing protocol The Graph. The smart contract is currently deployed on Skale, Optimism, Polygon zkEVM, Mantle and Gnosis Chain. 
 
-With this system patients can access their medical records anytime anywhere without the counterparty risk from centralized entity. This system also features QR code for sharing of medical files from patients to doctors. With the proposed implementation the decentralized medical record keeping system provides increased security and privacy compared to centralized systems without loss of significant performance or scalability benefits.
+With this system, patients can access their medical records anytime anywhere without the counterparty risk from the centralized entity. This system also features QR code for sharing medical files from patients to doctors. With the proposed implementation the decentralized medical record system provides increased security and privacy compared to centralized systems without loss of significant performance or scalability benefits. 
+
+An AI Module that serves as medical assistance when you have symptoms that you cannot get to the hospital was also implemented using the OpenAI system.
 
 ### The links to other repositories of this project is at the top
 
@@ -32,6 +34,15 @@ The following is a list of major frameworks, library and tools used for developi
 - [![tailwindcss][tailwindcss]][tailwind-url]
 - [![moralis][moralis]][moralis-url]
 - [![web3uikit][web3uikit]][web3uikit-url]
+- [![OpenAI]][https://platform.openai.com/account/api-keys]
+- [![TheGraph]][https://thegraph.com/]
+
+### Blockchains deployed
+- Mantle - 
+- Scroll - 
+- Gnosis Chain - 
+- Polygon zkEVM - 
+- Optimism -
 
 
 <!-- GETTING STARTED -->

@@ -2,20 +2,19 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router'
-import Header from "../components/Header"
-
+import { useRouter } from 'next/router';
+import Header from "../components/Header";
 const Symptom = () => {
   const navigate = useRouter();
   const [userInput, setUserInput] = useState('');
-  const [apiOutput, setApiOutput] = useState('')
-const [isGenerating, setIsGenerating] = useState(false)
+  const [apiOutput, setApiOutput] = useState('');
+const [isGenerating, setIsGenerating] = useState(false);
 
 const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   
   console.log("Calling OpenAI...");
-  const response = await fetch('/api/generate', {
+  const response = await fetch('http://localhost:3001/api/generate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -34,7 +33,7 @@ const callGenerateEndpoint = async () => {
 const getAbstract = async () => {
   console.log("Calling Abstract...");
 
-navigate.push('/abstract');
+navigate.push('/drugs');
 }
 
   const onUserChangedText = (event) => {
@@ -79,7 +78,7 @@ navigate.push('/abstract');
   <div className="output">
     <div className="output-header-container">
       <div className="output-header">
-        <h3>List of Topics</h3>
+        <h3>List of Ailments</h3>
       </div>
     </div>
 
@@ -92,7 +91,7 @@ navigate.push('/abstract');
     onClick={getAbstract}
   >
     <div className="generate">
-   <p>Get Abstract of any of the topics above</p>
+   <p>Get Drugs and remedies for any selected ailment above</p>
     </div>
   </a>
 </div>

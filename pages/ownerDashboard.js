@@ -373,7 +373,7 @@ export default function OwnerDashboard() {
                         </div>
                     </Modal>
                     <div className="py-4 px-3 font-bold text-4xl ml-12">
-                        Owner Dashboard
+                        Admin Dashboard
                         {isWeb3Enabled ? (
                             <div className="badge badge-primary ml-4">
                                 Web3 is Enabled
