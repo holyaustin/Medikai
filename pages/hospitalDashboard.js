@@ -42,10 +42,10 @@ export default function HospitalDashboard() {
     return (
         <div className="container mx-auto  overflow-x-hidden h-screen">
             <Head>
-                <title>MediChain - Hospital Dashboard</title>
+                <title>Medikai - Hospital Dashboard</title>
                 <meta
                     name="description"
-                    content="MediChain - Hospital Dashboard"
+                    content="Medikai - Hospital Dashboard"
                 />
                 <link rel="icon" href="/logo.svg" />
             </Head>

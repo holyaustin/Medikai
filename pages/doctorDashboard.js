@@ -36,10 +36,10 @@ export default function DoctorDashboard() {
     return (
         <div className="container mx-auto overflow-x-hidden h-screen">
             <Head>
-                <title>MediChain - Doctor Dashboard</title>
+                <title>Medikai - Doctor Dashboard</title>
                 <meta
                     name="description"
-                    content="MediChain - Doctor Dashboard"
+                    content="Medikai - Doctor Dashboard"
                 />
                 <link rel="icon" href="/logo.svg" />
             </Head>

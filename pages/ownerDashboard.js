@@ -197,10 +197,10 @@ export default function OwnerDashboard() {
     return (
         <div className="container mx-auto h-screen overflow-x-hidden">
             <Head>
-                <title>MediChain - Owner Dashboard</title>
+                <title>Medikai - Admin Dashboard</title>
                 <meta
                     name="description"
-                    content="MediChain - Owner Dashboard"
+                    content="Medikai - Admin Dashboard"
                 />
                 <link rel="icon" href="/logo.svg" />
             </Head>

@@ -34,8 +34,8 @@ The following is a list of major frameworks, library and tools used for developi
 - [![tailwindcss][tailwindcss]][tailwind-url]
 - [![moralis][moralis]][moralis-url]
 - [![web3uikit][web3uikit]][web3uikit-url]
-- [![OpenAI]][https://platform.openai.com/account/api-keys]
-- [![TheGraph]][https://thegraph.com/]
+- [OpenAI][https://platform.openai.com/account/api-keys]
+- [TheGraph][https://thegraph.com/]
 
 ### Blockchains deployed
 - Mantle - 
