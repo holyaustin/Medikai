@@ -94,7 +94,7 @@ navigate.push('/drugs');
     onClick={callGenerateEndpoint}
   >
     <div className="generate">
-    {isGenerating ? <span className="loader"></span> : <p>Diagnose</p>}
+    {isGenerating ? <span className="loader"></span> : <p>Diagnose Disease</p>}
     </div>
   </a>
 </div>
