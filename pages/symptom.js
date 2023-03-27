@@ -14,8 +14,8 @@ const callGenerateEndpoint = async () => {
   setIsGenerating(true);
   
   console.log("Calling OpenAI...");
-  const response = await fetch('https://medikai.vercel.app/api/generate', {
-  // const response = await fetch('/api/generate', {
+  // const response = await fetch('http://localhost:3000/api/generate', {
+  const response = await fetch('/api/generate', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
