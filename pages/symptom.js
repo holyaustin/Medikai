@@ -10,13 +10,20 @@ const Symptom = () => {
   const [apiOutput, setApiOutput] = useState('');
 const [isGenerating, setIsGenerating] = useState(false);
 
+
+
 const callGenerateEndpoint = async () => {
   setIsGenerating(true);
+
+  const url = process.env.VERCEL_URL
+console.log("url is", url)
   
-  console.log("Calling OpenAI...");
+  console.log("Calling OpenAI..."); 
+  //const response = await fetch("http://" +  process.env.VERCEL_URL + "/api/generate", {
   // const response = await fetch(`http://localhost:3000/api/generate`, {
   const response = await fetch(`/api/generate`, {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json',
     },
